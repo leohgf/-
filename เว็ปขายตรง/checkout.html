@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงิน</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ชำระเงิน</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="category.html">หมวดหมู่สินค้า</a></li>
+                <li><a href="cart.html">ตะกร้าสินค้า</a></li>
+                <li><a href="checkout.html">ชำระเงิน</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>กรอกข้อมูลการชำระเงิน</h2>
+        <form>
+            <label for="name">ชื่อ:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">ที่อยู่:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">วิธีการชำระเงิน:</label>
+            <select id="payment" name="payment">
+                <option value="credit-card">บัตรเครดิต</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">โอนเงินผ่านธนาคาร</option>
+            </select>
+
+            <button type="submit">ชำระเงิน</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 ร้านค้าออนไลน์. สงวนลิขสิทธิ์.</p>
+    </footer>
+</body>
+</html>
